@@ -1,14 +1,21 @@
 {
-  "name": "agritrace-frontend",
+  "name": "agritrace-hardhat-v2",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "ethers": "^6.6.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "test": "hardhat test",
+    "compile": "hardhat compile"
+  },
+  "devDependencies": {
+    "hardhat": "^2.14.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@openzeppelin/contracts-upgradeable": "^4.9.3",
+    "@openzeppelin/hardhat-upgrades": "^1.26.0",
+    "chai": "^4.3.7",
+    "ethereum-waffle": "^3.4.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "ethers": "^6.6.0"
   }
 }
